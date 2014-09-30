@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+   ___________________________________________________
+  |                                                   |
+  |  Fruition App Accelerator - V1.0 - 09/03/13       |
+  |  http://www.fruitionpartners.com                  |
+  |                                                   |
+  |  Copyright (c) 2013 Fruition Partners             |
+  |  Licensed under the MIT license.                |
+  |___________________________________________________|
+
+  File: pattern_api
+
+  Type: UI Page
+
+  Description: The page is an example template for testing an AJAX Processor
+
+  Usage: 
+
+  To get started copy this template to a new UI Page
+  Modify the elements and Script to call the correct AJAX processor
+
+  Navigate to the page and view the console.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=b93bac9c503b0d0084e98e6f816b9d08
+// __fieldName = html 
+
+-->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <h1> Review the console for output </h1>
+
+  <script>
+
+  function runTest(){
+
+    var ga = new GlideAjax( "PatternApi" );
+    ga.addParam('sysparm_name', "testFunction");
+    ga.addParam('parameter', "Test");
+
+    ga.getXML( function(response){
+      console.log( this.callbackArgs.someCallbackArg );        
+
+      // The answer will be in plain text
+      var answer = response.responseXML.documentElement.getAttribute("answer");
+
+      // Convert that text to a JSON object if we know thats the type
+      var response = JSON.parse(answer);
+      
+      console.log( response );
+
+    }, {}, { someCallbackArg : "test" });
+  }
+
+
+  runTest();
+
+  </script>      
+
+</j:jelly>

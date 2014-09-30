@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+    File: multi_page_app_home
+
+    Description: This file is a template for creating a header macro for a custom page
+
+    Usage: 
+
+    To get started copy this template to a new UI Macro.
+    Create a Formatter with the name of the UI Macro with .xml appended at the end and link
+    the Formatter to the table you want to use the element on.
+
+    Navigate to the table and Personalize the Form, the custom Formatter will be listed 
+    under the fields.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=41c86ad250efc90084e98e6f816b9d87
+// __fieldName = html  
+
+-->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:inline template="multi_page_app_header.xml" /> 
+
+		<div class="centered">
+			<h3>Here is the main content for the homepage.</h3>
+			<p>Your content would go here.</p>
+			<br />
+			<h4>Here are some links to other pages using this template</h4>
+			<ul>
+				<li><a href="multi_page_app_second.do">Second Page</a></li>
+			</ul>
+			<br />
+		</div>
+	<g:inline template="multi_page_app_footer.xml" /> 
+</j:jelly>

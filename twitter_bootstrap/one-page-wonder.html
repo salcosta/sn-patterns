@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+  File: bootstrap_one_page_wonder
+
+  Description: This file is a template for Twitter BootStrap
+
+  Usage: 
+
+  Make sure the preqs are installed :
+
+  StyleSheet Processor
+  Bootstrap JS
+  Bootstrap Stylesheets
+
+  To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=39c512ec50bb0d0084e98e6f816b9d9d
+// __fieldName = html
+ -->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap?CSS" rel="stylesheet" />
+    <link href="font-awesome?CSS" rel="stylesheet" />
+    
+    <style>
+      body {
+        margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+      }
+
+      .header-image {
+        background: url(http://placehold.it/200x300) repeat;/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
+        background-position: top;
+        height: auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .headline {
+        padding: 120px 0;
+      }
+
+      .headline >$[SP].container >$[SP]h1 {
+        font-size: 130px;
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .headline >$[SP].container >$[SP]h2 {
+        font-size: 77px;
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .featurette-divider {
+        margin: 80px 0;
+      }
+      .featurette {
+        overflow: hidden; 
+      }
+
+      .featurette-image.pull-left {
+        margin-right: 40px;
+      }
+      .featurette-image.pull-right {
+        margin-left: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 50px;
+      }
+
+      footer {
+        margin: 50px 0;
+      }
+
+      /* RESPONSIVE CSS */
+
+      @media (max-width: 1200px) {
+
+      .headline >$[SP].container >$[SP]h1 {font-size: 140px;}
+      .headline >$[SP].container >$[SP]h2 {font-size: 63px;}
+      .featurette-divider {margin: 50px 0;}
+      .featurette-image.pull-left {margin-right: 20px;}
+      .featurette-image.pull-right {margin-left: 20px;}
+      .featurette-heading {font-size: 35px;}
+
+      }
+
+      @media (max-width: 991px) {
+
+      .headline >$[SP].container >$[SP]h1 {font-size: 105px;}
+      .headline >$[SP].container >$[SP]h2 {font-size: 50px;}
+      .featurette-divider {margin: 40px 0;}
+      .featurette-image {max-width: 50%;}
+      .featurette-image.pull-left {margin-right: 10px;}
+      .featurette-image.pull-right {margin-left: 10px;}
+      .featurette-heading {font-size: 30px;}
+
+      }
+
+      @media (max-width: 768px) {
+        
+      .container {margin: 0 15px;}
+      .featurette-divider {margin: 40px 0;}
+      .featurette-heading {font-size: 25px;}
+
+      }
+
+
+      @media (max-width: 668px) {
+
+      .headline >$[SP].container >$[SP]h1 {font-size: 70px;}
+      .headline >$[SP].container >$[SP]h2 {font-size: 32px;}
+      .featurette-divider {margin: 30px 0;}
+
+      }
+
+      @media (max-width: 640px) {
+
+      .headline {padding: 75px 0 25px 0;}
+      .headline >$[SP].container >$[SP]h1 {font-size: 60px;}
+      .headline >$[SP].container >$[SP]h2 {font-size: 30px;}
+
+      }
+
+      @media (max-width: 375px) {
+
+      .featurette-divider {margin: 10px 0;}
+      .featurette-image {max-width: 100%;}
+      .featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
+      .featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="bootstrap_index.do">Start Bootstrap</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="header-image">
+
+      <div class="headline">
+        <div class="container">
+          <h1>One Page Wonder</h1>
+          <h2>Will Knock Your Socks Off</h2>
+        </div>
+      </div>
+
+    </div><!-- /header-image -->
+
+    <div class="container">
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" />
+
+      <div class="featurette" id="about">
+        <img class="featurette-image img-circle img-responsive pull-right" src="http://placecreature.com/500/500" />
+        <h2 class="featurette-heading">This First Heading$[SP]<span class="text-muted">Will Catch Your Eye</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="featurette" id="services">
+        <img class="featurette-image img-circle img-responsive pull-left" src="http://placecreature.com/500/500" />
+        <h2 class="featurette-heading">The Second Heading$[SP]<span class="text-muted">Is Pretty Cool Too.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="featurette" id="contact">
+        <img class="featurette-image img-circle img-responsive pull-right" src="http://placecreature.com/500/500" />
+        <h2 class="featurette-heading">The Third Heading$[SP]<span class="text-muted">Will Seal the Deal.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+      <hr />
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright $[AMP]copy; Company 2013 $[AMP]middot; Facebook $[AMP]middot; Twitter $[AMP]middot; Google+</p>
+          </div>
+        </div>
+      </footer>
+      <!-- /END OF FOOTER -->
+
+    </div><!-- /container -->
+
+  <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      jQuery.noConflict();
+    </script>
+
+  <script src="bootstrap.jsdbx"></script>
+
+  </body>
+
+</j:jelly>

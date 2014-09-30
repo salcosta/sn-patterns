@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+	 ___________________________________________________
+	|													|
+	|  Fruition App Accelerator - V1.0 - 09/03/13 		|
+	|  http://www.fruitionpartners.com 					|
+	| 													|
+	|  Copyright (c) 2013 Fruition Partners				|
+	|  Licensed under the MIT license.           	    |
+	|___________________________________________________|
+
+	File: pattern_single_page_app
+
+	Description: This file is a template for creating a single page app using Jelly/HTML
+
+	Usage: 
+
+	To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=9ab5461250efc90084e98e6f816b9d83
+// __fieldName = html 
+-->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g2:evaluate>
+	 	var userID = gs.getUserName().toString();
+	 	var action = RP.getParameterValue('action') || "";
+	 	var name = RP.getParameterValue('name') || "";
+	 	var color = RP.getParameterValue('color') || "";
+	</g2:evaluate>
+
+	<div style="margin:40px auto;width:940px">
+		<j2:choose>
+			<j2:when test='$[action=="first"]'>
+				<h1>
+					Hello $[name]
+				</h1>
+				<form method="GET">
+					<label>Enter Your Favorite Color
+						<input type="text" name="color" />
+					</label>
+					<input type="hidden" name="name" value="$[name]" />
+					<input type="hidden" name="action" value="second" />
+					<input type="submit" value="Submit" />
+				</form>
+			</j2:when>
+
+			<j2:when test='$[action=="second"]'>
+				<h1>
+					$[name], is $[color] really your favorite color?
+				</h1>		
+			</j2:when>
+
+			<j2:otherwise>
+				<h1>
+					Welcome.
+				</h1>
+				
+				<form method="GET">
+
+					<label>Enter Your Name
+						<input type="text" name="name" />
+					</label>
+					<input type="hidden" name="action" value="first" />
+					<input type="submit" value="Submit" />
+				</form>
+			</j2:otherwise>
+
+		</j2:choose>
+	</div>
+</j:jelly>

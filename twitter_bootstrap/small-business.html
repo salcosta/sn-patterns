@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+  File: bootstrap_small_business
+
+  Description: This file is a template for Twitter BootStrap
+
+  Usage: 
+
+  Make sure the preqs are installed :
+
+  StyleSheet Processor
+  Bootstrap JS
+  Bootstrap Stylesheets
+
+  To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=4929daec50bb0d0084e98e6f816b9d55
+// __fieldName = html
+ -->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap?CSS" rel="stylesheet" />
+    <link href="font-awesome?CSS" rel="stylesheet" />
+    
+    <style>
+      body {
+        margin-top: 125px; /* adjust this if the height of the menu bar changes */
+      }
+
+      .nav {
+        margin-top: 28px; /* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+      }
+
+      footer {
+        padding: 30px 0;  
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand logo-nav" href="bootstrap_index.do"><img src="http://placehold.it/150x75$[AMP]text=Logo" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8">
+          <img class="img-responsive img-rounded" src="http://placehold.it/900x350" /><!-- take out img-rounded if you don't want the rounded corners on the image -->
+        </div>
+        <div class="col-lg-4">
+          <h1>Business Name or Tagline</h1>
+          <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+          <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+        </div>
+      </div>
+      
+      <hr />
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="well text-center">
+            This is a well that is a great spot for a business tagline or phone number for easy access!
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Heading 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo.</p>
+          <a class="btn btn-default" href="#">More Info</a>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading 2</h2>
+          <p>Phasellus vestibulum sagittis purus laoreet varius. Pellentesque malesuada malesuada mattis. Aliquam sed porta nisi, eget suscipit dolor. Nam ipsum sapien, rhoncus eu leo eu, ultricies pellentesque tellus.</p>
+          <a class="btn btn-default" href="#">More Info</a>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo.</p>
+          <a class="btn btn-default" href="#">More Info</a>
+        </div>
+      </div>
+      
+      <footer>
+        <hr />
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright $[AMP]copy; Company 2013 $[AMP]middot; Facebook $[AMP]middot; Twitter $[AMP]middot; Google+</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      jQuery.noConflict();
+    </script>
+
+    <script src="bootstrap.jsdbx"></script>
+  </body>
+</j:jelly>

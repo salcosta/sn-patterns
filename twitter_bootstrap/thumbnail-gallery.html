@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+  File: bootstrap_thumbnail_gallery
+
+  Description: This file is a template for Twitter BootStrap
+
+  Usage: 
+
+  Make sure the preqs are installed :
+
+  StyleSheet Processor
+  Bootstrap JS
+  Bootstrap Stylesheets
+
+  To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=fb5d922050fb0d0084e98e6f816b9d66
+// __fieldName = html
+ -->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap?CSS" rel="stylesheet" />
+    <link href="font-awesome?CSS" rel="stylesheet" />
+    
+    <style>
+      body {
+        margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+      }
+
+      .thumb {
+        margin-bottom: 30px;
+      }
+
+      footer {
+        margin: 50px 0;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="bootstrap_index.do">Start Bootstrap</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <div class="container">
+
+      <div class="row">
+      
+        <div class="col-lg-12">
+          <h1 class="page-header">Thumbnail Gallery</h1>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#"><img class="img-responsive" src="http://placehold.it/400x300" /></a>
+        </div>
+      </div>
+      
+      <hr />
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright $[AMP]copy; Company 2013 $[AMP]middot; Facebook $[AMP]middot; Twitter $[AMP]middot; Google+</p>
+          </div>
+        </div>
+      </footer>
+      
+    </div><!-- /.container -->
+
+  <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      jQuery.noConflict();
+    </script>
+
+  <script src="bootstrap.jsdbx"></script>
+
+  </body>
+
+</j:jelly>

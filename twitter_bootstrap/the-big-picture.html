@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+  File: bootstrap_the_big_picture
+
+  Description: This file is a template for Twitter BootStrap
+
+  Usage: 
+
+  Make sure the preqs are installed :
+
+  StyleSheet Processor
+  Bootstrap JS
+  Bootstrap Stylesheets
+
+  To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=523c122050fb0d0084e98e6f816b9d97
+// __fieldName = html
+ -->
+
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap?CSS" rel="stylesheet" />
+    <link href="font-awesome?CSS" rel="stylesheet" />
+    
+    <style>
+      body {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background: none;
+      }
+
+      .full {
+        background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+    </style>
+
+  </head>
+
+  <body class="full">
+      
+    <nav class="navbar navbar-fixed-bottom navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="bootstrap_index.do">Start Bootstrap</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <h1>The Big Picture</h1>
+          <p>Here's a spot for some awesome intro text. Check out the fixed nav at the bottom!</p>
+          <p>Set the background image in the CSS, pair it with some cool fonts, and you will have a rockin' start to a cool portfolio.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      jQuery.noConflict();
+    </script>
+
+  <script src="bootstrap.jsdbx"></script>
+
+  </body>
+
+</j:jelly>

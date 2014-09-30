@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+     ___________________________________________________
+    |                                                   |
+    |  Fruition App Accelerator - V1.0 - 09/03/13       |
+    |  http://www.fruitionpartners.com                  |
+    |                                                   |
+    |  Copyright (c) 2013 Fruition Partners             |
+    |  Licensed under the MIT license.                  |
+    |___________________________________________________|
+
+  File: bootstrap_round_about
+
+  Description: This file is a template for Twitter BootStrap
+
+  Usage: 
+
+  Make sure the preqs are installed :
+
+  StyleSheet Processor
+  Bootstrap JS
+  Bootstrap Stylesheets
+
+  To get started copy this template to a new UI Page.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_page.do?sys_id=d7e6d2ec50bb0d0084e98e6f816b9d6b
+// __fieldName = html
+ -->
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap?CSS" rel="stylesheet" />
+    <link href="font-awesome?CSS" rel="stylesheet" />
+
+    <style>
+        body {
+          margin-top: 50px;
+        }
+
+        footer {
+          margin: 50px 0;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="bootstrap_index.do">Start Bootstrap</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <div class="container">
+      
+      <div class="row">
+      
+        <div class="col-lg-12">
+          <h1 class="page-header">About Us$[SP]<small>It's Nice to Meet You!</small></h1>
+          <p>This is a great place to start off with a short and sweet description of your company, organization, or whatever purpose your website is serving. Keep it friendly, engaging, but short enough to where you won't lose your reader!</p>
+          <p>If you need a bit more space to describe what is going on, we recommend putting a picture in this section. Use the <code>pull-right</code>$[SP]class on the image to make it look good!</p>
+        </div>
+
+        <div class="col-lg-12">
+          <h2 class="page-header">Our Team</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smith$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smath$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smeth$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smyth$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smoth$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+        	<img class="img-circle img-responsive" src="http://placehold.it/200x200" />
+            <h3>John Smuth$[SP]<small>Job Title</small></h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright $[AMP]copy; Company 2013 $[AMP]middot; Facebook $[AMP]middot; Twitter $[AMP]middot; Google+</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>$[SP]<!-- /container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Don't forget to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      jQuery.noConflict();
+    </script>
+
+    <script src="bootstrap.jsdbx"></script>
+  </body>
+</j:jelly>

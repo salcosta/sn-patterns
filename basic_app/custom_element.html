@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+	 ___________________________________________________
+	|													|
+	|  Fruition App Accelerator - V1.0 - 09/03/13 		|
+	|  http://www.fruitionpartners.com 					|
+	| 													|
+	|  Copyright (c) 2013 Fruition Partners				|
+	|  Licensed under the MIT license.           	    |
+	|___________________________________________________|
+
+	File: custom_element
+
+	Description: This file is a template for creating a custom element to be using in a ServiceNow form.
+
+	Usage: 
+
+	To get started copy this template to a new UI Macro.
+	Create a Formatter with the name of the UI Macro with .xml appended at the end and link
+	the Formatter to the table you want to use the element on.
+
+	Navigate to the table and Personalize the Form, the custom Formatter will be listed 
+	under the fields.
+
+-->
+
+<!-- 
+// __fileURL = https://fruition18.service-now.com/sys_ui_macro.do?sys_id=678aa15e50afc90084e98e6f816b9da0
+// __fieldName = xml
+ -->
+
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<!-- The table/row/cell layout makes the styling seem more out of box but it is not required -->
+	<table cellspacing="2" width="100%">
+		<tbody>
+			<tr>
+				<!-- Most fields have a label although this is not required -->
+				<td id="label.incident.u_custom" title="" data-type="label" choice="0" nowrap="true" class="label label_spacing" type="color">
+
+					<!-- Standard UI Policies and Scripts won't work but let's put this here so the label lines up correctly -->
+					<span id="status.incident.u_custom" class="label_description" title="" mandatory="false" oclass="">$[SP]</span>
+					<label for="u_custom" onclick="return labelClicked(this);" >Custom Element:</label>
+				</td>
+				<td>
+					<!-- Let's add a Color Picker to the form -->
+					<!-- This ties the input to a field u_custom that was previously created on the table -->
+					<!-- Assuming the field type is a string, data will not be formatted in the database  -->
+					<input id="incident.u_custom" type="color" onchange="onChange('incident.u_custom');" name="incident.u_custom" value="$[current.u_custom]" autocomplete="off" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</j:jelly>

@@ -1,0 +1,18 @@
+Font Upload
+========================================================================================
+Twitter Bootstrap Uses Custom Fonts to render Icons
+
+To upload these navigate to Upload File
+Upload all the fonts located in
+ /fonts
+ /font-awesome/font
+
+StyleSheets have already been modified to point at the Static Content Server (SCS)
+
+
+StyleSheet Processor
+========================================================================================
+Custom processor used to load style sheets by name
+
+Copy the processor from /developer_tools/StyleSheet.js and create a new processor with
+the path set to CSS
